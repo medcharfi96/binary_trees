@@ -22,7 +22,7 @@ nouveau->right = NULL;
 		nouveau->right = parent->right;
 		(parent->right)->parent = nouveau;
 	}
-parent->left = nouveau;
+parent->right = nouveau;
 return (nouveau);
 }
 return (NULL);
