@@ -13,10 +13,14 @@ return (NULL);
 nouveau = malloc(sizeof(binary_tree_t));
 if (nouveau != NULL)
 {
+	nouveau->n = value;
+nouveau->parent = parent;
+nouveau->left = NULL;
+nouveau->right = NULL;
 	if (parent->left != NULL)
 	{
 		nouveau->left = parent->left;
-		parent->left = nouveau;
+		(parent->left)->parent = nouveau;
 	}
 parent->left = nouveau;
 }
