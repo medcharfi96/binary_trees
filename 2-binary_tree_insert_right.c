@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 /**
-*binary_tree_insert_left - insert in left
+*binary_tree_insert_right - insert in left
 *@parent: pointeur
 *@value: int
 *Return: binary_tree(mean true)
